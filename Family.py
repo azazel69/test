@@ -46,7 +46,6 @@ from random import randint
 class House:
 
     def __init__(self):
-
         self.money = 100
         self.food = 50
         self.dirt = 0
@@ -107,17 +106,17 @@ class Husband:
     def gaming(self):
         cprint('{} играл целый день'.format(self.name), color='green')
         self.fullness -= 10
+
     def get_house(self, house):
         self.house = house
-        self.fullness -=10
-        cprint('{} въехал в дом'.format(self.name), color = 'green')
+        self.fullness -= 10
+        cprint('{} въехал в дом'.format(self.name), color='green')
+
 
 class Wife:
 
     def __init__(self, name):
         self.name = name
-
-
 
     def __str__(self):
         return super().__str__()
